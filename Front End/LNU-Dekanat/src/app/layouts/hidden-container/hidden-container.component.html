@@ -1,0 +1,18 @@
+<div class = "container-wrapper">
+
+    <div class="button-div">
+
+        <button class="open-ifno-btn" (click)="click()">{{buttonText}}</button>
+
+    </div>
+    @if (isShowed) {
+    <div class="info-container" @fadeAnimation>
+
+        <span [innerHTML]="infoText">
+            {{infoText}}
+        </span>
+
+    </div>
+    }
+
+</div>

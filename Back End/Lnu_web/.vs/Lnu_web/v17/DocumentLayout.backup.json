@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|c:\\users\\vlad\\desktop\\uniapp\\back end\\lnu_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|c:\\users\\vlad\\desktop\\uniapp\\back end\\lnu_web\\models\\user\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|solutionrelative:models\\user\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|c:\\users\\vlad\\desktop\\uniapp\\back end\\lnu_web\\controllers\\chatcontroller\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|solutionrelative:controllers\\chatcontroller\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|c:\\users\\vlad\\desktop\\uniapp\\back end\\lnu_web\\reposotories\\chatrepository\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|solutionrelative:reposotories\\chatrepository\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|c:\\users\\vlad\\desktop\\uniapp\\back end\\lnu_web\\services\\chatservice\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|solutionrelative:services\\chatservice\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|c:\\users\\vlad\\desktop\\uniapp\\back end\\lnu_web\\models\\chatmodel\\adduserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|solutionrelative:models\\chatmodel\\adduserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|c:\\users\\vlad\\desktop\\uniapp\\back end\\lnu_web\\lnu_web.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{3376B31A-E304-45F4-B4B6-9CF0D0B95DEE}|Lnu_web.csproj|solutionrelative:lnu_web.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 192,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Lnu_web.http",
+              "DocumentMoniker": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Lnu_web.http",
+              "RelativeDocumentMoniker": "Lnu_web.http",
+              "ToolTip": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Lnu_web.http",
+              "RelativeToolTip": "Lnu_web.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-02T13:07:32.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T16:24:25.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Models\\User\\UserModel.cs",
+              "RelativeDocumentMoniker": "Models\\User\\UserModel.cs",
+              "ToolTip": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Models\\User\\UserModel.cs",
+              "RelativeToolTip": "Models\\User\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T17:06:45.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Models\\ChatModel\\AddUserRequest.cs",
+              "RelativeDocumentMoniker": "Models\\ChatModel\\AddUserRequest.cs",
+              "ToolTip": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Models\\ChatModel\\AddUserRequest.cs",
+              "RelativeToolTip": "Models\\ChatModel\\AddUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T16:45:23.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Services\\ChatService\\ChatService.cs",
+              "RelativeDocumentMoniker": "Services\\ChatService\\ChatService.cs",
+              "ToolTip": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Services\\ChatService\\ChatService.cs",
+              "RelativeToolTip": "Services\\ChatService\\ChatService.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAcwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T17:37:05.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Reposotories\\ChatRepository\\ChatRepository.cs",
+              "RelativeDocumentMoniker": "Reposotories\\ChatRepository\\ChatRepository.cs",
+              "ToolTip": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Reposotories\\ChatRepository\\ChatRepository.cs",
+              "RelativeToolTip": "Reposotories\\ChatRepository\\ChatRepository.cs",
+              "ViewState": "AgIAADIBAAAAAAAAAAAmwEsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T14:16:10.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Controllers\\ChatController\\ChatController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatController\\ChatController.cs",
+              "ToolTip": "C:\\Users\\VLAD\\Desktop\\uniAPP\\Back End\\Lnu_web\\Controllers\\ChatController\\ChatController.cs",
+              "RelativeToolTip": "Controllers\\ChatController\\ChatController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAiwLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T16:56:17.207Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

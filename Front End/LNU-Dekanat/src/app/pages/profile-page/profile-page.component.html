@@ -1,0 +1,81 @@
+<div class="profile-page-container">
+
+    <app-header></app-header>
+
+    <div class="profile-info-container">
+
+        @if (profileUserId===currentUserId) {
+        <div>
+
+            @if (getRole()) {
+            <app-profile 
+                [kafedra]="teacher.academicDetails.departament"
+                [posada]="teacher.academicDetails.title"
+                [stupin]="teacher.academicDetails.stupin"
+                [zvannya]="teacher.academicDetails.rank"
+                [phone]="teacher.coreInfo.phone"
+                [photo]="teacher.coreInfo.photoPath"
+                [email]="teacher.coreInfo.email"
+                [areasText]="teacher.additionalInfo.research"
+                [bioText]="teacher.additionalInfo.biography"
+                [infoText]="teacher.additionalInfo.subjects"
+                [username]="teacher.coreInfo.name"
+                [projectsText]="teacher.additionalInfo.projects">
+            </app-profile>
+            }@else {
+
+            <app-profile 
+                [kafedra]="'Cистемного проектування'"
+                [phone]="student.coreStudent.phone"
+                [email]="student.coreStudent.email"
+                [stupin]="student.academicalStudent.stupin"
+                [group]="student.academicalStudent.group"
+                [formOfStudy]="student.academicalStudent.formOfStudy"
+                [formOfPay]="student.academicalStudent.formOfPay"
+                [termin]="student.academicalStudent.terminOfStudy"
+                [endOfStudy]="student.academicalStudent.endOfStudy">
+            </app-profile>
+            }
+
+        </div>
+    }
+
+        @if (profileUserId!==currentUserId) {
+        <div >
+
+            @if (isTeacher) {
+            <app-profile 
+                [kafedra]="teacher.academicDetails.departament"
+                [posada]="teacher.academicDetails.title"
+                [stupin]="teacher.academicDetails.stupin"
+                [zvannya]="teacher.academicDetails.rank"
+                [phone]="teacher.coreInfo.phone"
+                [photo]="teacher.coreInfo.photoPath"
+                [email]="teacher.coreInfo.email"
+                [areasText]="teacher.additionalInfo.research"
+                [bioText]="teacher.additionalInfo.biography"
+                [username]="teacher.coreInfo.name"
+                [infoText]="teacher.additionalInfo.subjects"
+                [projectsText]="teacher.additionalInfo.projects">
+            </app-profile>
+            }@else {
+
+            <app-profile 
+                [kafedra]="'Cистемного проектування'"
+                [phone]="student.coreStudent.phone"
+                [email]="student.coreStudent.email"
+                [stupin]="student.academicalStudent.stupin"
+                [group]="student.academicalStudent.group"
+                [formOfStudy]="student.academicalStudent.formOfStudy"
+                [formOfPay]="student.academicalStudent.formOfPay"
+                [termin]="student.academicalStudent.terminOfStudy"
+                [endOfStudy]="student.academicalStudent.endOfStudy">
+            </app-profile>
+         }
+
+        </div>
+     }
+
+    </div>
+
+</div>

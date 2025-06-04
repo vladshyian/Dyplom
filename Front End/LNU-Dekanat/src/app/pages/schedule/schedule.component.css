@@ -1,0 +1,51 @@
+.schedule-table-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    z-index: 9999;
+}
+
+.choose-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.choose-day-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+select{
+    border: 1px solid blue;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    outline: none;
+}
+
+.add-schedule-btn{
+    background: none;
+    border: none;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+app-header {
+    position: sticky;
+    top: 0;
+    background-color: white;  
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}

@@ -1,0 +1,45 @@
+@if(isOpen){
+<div class="modal-overlay" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      @if (isUserSelect) 
+      {
+      <h3>Виберіть користувача</h3>
+      <ul class="user-list">
+        @for (user of users; track $index) {
+        <li (click)="selectUser(user)" class="user-item">
+          <span>{{ user.recieverName }}</span>
+        </li>
+        }
+      </ul>
+      }
+      @else if (!isUserSelect)
+      {
+        <h3>Створення групи</h3>
+        <label for="group-name">Назва групи</label>
+        <input id="group-name" type="text" [(ngModel)]="groupName" placeholder="Введіть назву групи" />
+  
+        <h4>Додайте користувачів до групи</h4>
+        <ul class="user-list">
+          @for (user of users; track $index) {
+          <li>
+            <label>
+              <input type="checkbox" [(ngModel)]="user.id" />
+              <span>{{ user.recieverName }}</span>
+            </label>
+          </li>
+          }
+        </ul>
+        <button class="btn-create-group" (click)="createGroup()">Створити групу</button>
+      }
+      <button class="close-btn" (click)="closeModal()">Закрити</button>
+      @if (isUserSelect) 
+      {
+        <button (click)="onGroupSelect()">Створити групу</button>
+      }
+      @else if(!isUserSelect)
+      {
+        <button (click)="onGroupSelect()">Обрати користувача</button>
+      }
+    </div>
+  </div>
+}

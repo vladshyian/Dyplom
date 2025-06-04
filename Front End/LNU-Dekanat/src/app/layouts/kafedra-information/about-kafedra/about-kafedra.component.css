@@ -1,0 +1,81 @@
+
+.kafedra-container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 30px;
+    width: 700px;
+    z-index: 9998;
+}
+
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kafedra-information-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    z-index: 9998;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    justify-content: left;
+    gap: 5px;
+    width: 500px;
+    padding-bottom: 10px;
+}
+
+.redirect-to-kafedra-btn{
+    width: 300px;
+    height: 20px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid transparent;
+    background-color: none;
+    cursor: pointer;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: left;
+    z-index: 9998;
+}
+
+.redirect-to-kafedra-btn:hover{
+    
+    border-bottom: 1px solid black;
+
+}
+
+.kafedra-img{
+    width: 70px;
+    height: 70px;
+}
+
+.contact-block{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.teacher-name{
+    font-size: 12px;
+}
+
+.contact{
+    width: 15px;
+    height: 15px;
+}
+
+.kafedra-text-container{
+    margin-top: 10px;
+    width: 600px;
+    font-size: small;
+
+}

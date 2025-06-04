@@ -1,0 +1,77 @@
+<div class="setting-page-container">
+
+    <app-header></app-header>
+
+    <div class="setting-container">
+
+        <div class="setting-panel-wrapper">
+
+            <h2 class="page-title">Налаштування</h2>
+
+            <div class="settings-fields-container">
+
+               @if (userRole === 'student') 
+               {
+                <div>
+                    <label for="surname">Прізвище</label>
+                    <input id="surname" type="text" [placeholder]="name">
+            
+                    <label for="name">Ім'я</label>
+                    <input id="name" type="text" [placeholder]="surname">
+            
+                    <label for="email">Пошта</label>
+                    <input id="email" type="text" [placeholder]="student.coreStudent.email">
+            
+                    <label for="phone">Номер телефону</label>
+                    <input id="phone" type="text" [placeholder]="student.coreStudent.phone">
+
+                    <label for="image">Завантажити зображення</label>
+                    <input type="file" accept="image/*" (change)="onFileSelected($event)" />
+                </div>
+
+                <div>
+                    <label for="login">Логін</label>
+                    <input id="login" type="text" [placeholder]="student.coreStudent.email">
+                    
+                    <label for="password">Пароль</label>
+                    <input id="password" type="text" placeholder="Тут ви можете змінити пароль">
+                </div>
+               }
+               @else if (userRole === 'admin') 
+               {
+                <div>
+                    <label for="surname">Прізвище</label>
+                    <input id="surname" type="text" [placeholder]="surname">
+            
+                    <label for="name">Ім'я</label>
+                    <input id="name" type="text" [placeholder]="name">
+            
+                    <label for="email">Пошта</label>
+                    <input id="email" type="text" [placeholder]="teacher.coreInfo.email">
+            
+                    <label for="phone">Номер телефону</label>
+                    <input id="phone" type="text" [placeholder]="teacher.coreInfo.phone">
+                </div>
+
+                <div>
+                    <label for="login">Логін</label>
+                    <input id="login" type="text" [placeholder]="teacher.coreInfo.email">
+                    
+                    <label for="password">Пароль</label>
+                    <input id="password" type="text" placeholder="Тут ви можете змінити пароль">
+                </div>
+               }
+
+            </div>
+
+            <div class="save-container">
+
+                <button>Зберегти</button>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,28 @@
+<div class="chat-list-container">
+    <div class="page-title">
+      <p>Повідомлення</p>
+      <div class="search-add-block">
+        <input type="text" class="search-input" placeholder="Пошук чату">
+        <button class="add-chat-btn" (click)="openModal()">+</button>
+      </div>
+    </div>
+  
+    <div class="chat-list-block">
+        @for (user of chatUsers; track $index) {
+      <app-chat-with
+        [user]="user"
+        (click)="onSelectUser(user)"
+        >
+      </app-chat-with>
+    }
+
+    </div>
+  
+    <app-modal-user-list
+      [isOpen]="isModalOpen"
+      [users]="availableUsers"
+      (close)="closeModal()"
+      (userSelected)="handleUserSelected($event)">
+    </app-modal-user-list>
+</div>
+  

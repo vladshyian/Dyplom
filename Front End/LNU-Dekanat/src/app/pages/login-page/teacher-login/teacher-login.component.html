@@ -1,0 +1,25 @@
+<div class="teacher-login-container">
+
+    <div class="form-wrapper">
+
+        <h2 class = "login-theme">Авторизація користувача</h2>
+
+        <form action="submit"  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+            <input id="login" type="text" required formControlName = "email">
+            <label class="login-label" for="login">Прізвище</label>
+
+            <input type="password" id="password" required formControlName = "password">
+            <label class="password-label" for="password">Пароль</label>
+
+            <button class = "submit-btn">Увійти</button>
+            
+        </form>
+
+        <div class="info-text-container">
+            <p>Якщо Ви забули пароль, зверніться до адміністратора на Вашу кафедру.</p>
+        </div>
+
+    </div>
+
+</div>

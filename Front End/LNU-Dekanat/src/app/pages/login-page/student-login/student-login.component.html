@@ -1,0 +1,23 @@
+<div class="teacher-login-container">
+    <div class="form-wrapper">
+      <h2 class="login-theme">Авторизація користувача</h2>
+  
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        
+        <input id="login" type="text" required formControlName="email">
+        <label class="login-label" for="login">Прізвище</label>
+  
+        <input type="password" id="password" required formControlName="password">
+        <label class="password-label" for="password">Пароль</label>
+  
+        <button class="submit-btn" type="submit" [disabled]="!loginForm.valid">Увійти</button>
+        
+      </form>
+  
+      <div class="info-text-container">
+        <p>При першому вході в персональний кабінет студента потрібно використовувати замість пароля № залікової книжки.</p>
+        <p>Якщо ви забули ваш пароль, вам необхідно заповнити форму за <a href="https://forms.office.com/pages/responsepage.aspx?id=IoWicJuWH0W9sqv-o6qlv_FLnC9ys1JAoDcDl1ZHU25UOU1SRUJCVTFORUpWNlFFRFFOOUFJMFo0Ny4u">посиланням</a> або зателефонувати за номером телефону 239-48-42.</p>
+      </div>
+    </div>
+  </div>
+  

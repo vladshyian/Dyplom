@@ -1,0 +1,34 @@
+<div class="schedule-container">
+    <h2>Викладацький розклад</h2>
+    
+    <div class="form-group">
+      <label for="teacher">Викладач:</label>
+      <select id="teacher" [(ngModel)]="selectedTeacherId" (change)="onTeacherChange()"  class="form-control">
+
+        @for (teacher of teachers; track $index) 
+        {
+
+            <option [value]="teacher.id">{{ teacher.name }}</option>
+
+        }
+
+    </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="semester">Семестр:</label>
+      <select id="semester" [(ngModel)]="selectedSemester" (change)="onSemesterChange()"  class="form-control">
+
+        @for (semester of semesters; track $index) 
+        {
+
+            <option [value]="semester">{{ semester }}</option>
+
+        }
+
+    </select>
+    </div>
+  
+    <button class="btn-view" (click)="viewSchedule(selectedTeacherId)">Переглянути розклад</button>
+  </div>
+  

@@ -1,0 +1,11 @@
+.kafedra-info-container{
+    width: 100%;
+}
+
+.kafedra-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}

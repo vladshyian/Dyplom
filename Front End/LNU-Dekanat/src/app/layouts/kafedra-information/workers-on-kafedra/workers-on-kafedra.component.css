@@ -1,0 +1,33 @@
+.workers-container{
+    width: 700px;
+}
+
+.workers-title{
+    padding: 20px;
+}
+
+.workers-table{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-posada-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+a{
+    font-size: small;
+    text-align: left;
+}
+
+span{
+    font-size: smaller;
+    text-align: right;
+}

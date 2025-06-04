@@ -1,0 +1,65 @@
+
+header{
+    display: flex;
+    box-sizing: border-box;
+    padding: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+    background-color: white;
+}
+
+.logo-img{
+    width: 55px;
+    height: 60px;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.profile-btn,
+.schedule-btn,
+.kafedra-btn,
+.messages-btn,
+.setting-btn{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background-color: none;
+    cursor: pointer;
+    background: none;
+    width: 200px;
+    height: 30px;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-btn:hover,
+.schedule-btn:hover,
+.kafedra-btn:hover,
+.messages-btn:hover,
+.setting-btn:hover{
+    border-bottom: 2px solid blue;
+}
+
+.logout-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background: none;
+    border: 2px solid transparent;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.logout-btn:hover{
+    border-radius: 15px;
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+}

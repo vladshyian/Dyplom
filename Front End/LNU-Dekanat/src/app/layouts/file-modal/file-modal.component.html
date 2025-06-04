@@ -1,0 +1,17 @@
+@if(isOpen) {
+<div class="modal-backdrop">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Upload File</h2>
+        <button class="close-btn" (click)="closeModal()">X</button>
+      </div>
+      <div class="modal-body">
+        <input type="file" (change)="onFileSelected($event)" />
+      </div>
+      <div class="modal-footer">
+        <button class="upload-btn" (click)="uploadFile()" [disabled]="!selectedFile">Upload</button>
+        <button class="cancel-btn" (click)="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+}

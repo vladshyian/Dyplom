@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+.sphere {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(110, 193, 255, 0.8), rgba(0, 95, 153, 0));
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(50px); 
+    opacity: 1; 
+    z-index: 0;
+  }
+
+  .sphere:nth-child(1) {
+    top: 20%;
+    left: 5%;
+  }
+
+  .sphere:nth-child(2) {
+    top: 60%;
+    left: 70%;
+    width: 350px;
+    height: 200px;
+    filter: blur(40px);
+  }
+
+  .sphere:nth-child(3) {
+    top: 70%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    filter: blur(40px);
+  }
+
+  html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px; 
+}
+
+html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    background: #f0f0f0; 
+    border-radius: 4px; 
+}
+

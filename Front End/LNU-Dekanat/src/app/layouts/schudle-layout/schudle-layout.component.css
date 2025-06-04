@@ -1,0 +1,79 @@
+.schedule-container {
+    min-width: 200px;
+    font-family: Arial, sans-serif;
+    z-index: 1111;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+    vertical-align: middle;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #f2f2f2;
+  }
+  
+  td {
+    line-height: 1.6;
+    text-wrap: nowrap;
+    font-size: 15px;
+  }
+
+  .alert-text{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+  }
+ 
+  .delete-hint {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    display: block;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+  .delete-hint:hover {
+    opacity: 1;
+    background-color: #d32f2f;
+  }
+
+  td {
+    position: relative;
+  }
+  
+  td:hover .delete-hint {
+    display: block;
+  }
+  

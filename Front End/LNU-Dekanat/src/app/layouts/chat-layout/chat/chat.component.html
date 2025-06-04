@@ -1,0 +1,63 @@
+<div class="chat-container">
+    <div class="chat-title">
+      @if (selectedUser!==null) {
+      <button routerLink="/Profile/{{selectedUser.recieverId}}" class="redirect-to-profile">
+        @if(selectedUser.userPhoto != null){
+          <img [src] = "selectedUser.userPhoto" class = "user-photo-redirect" alt="user-pht">
+      }@else {
+          <img src="person.svg" alt="user-pht" class = "user-photo-redirect">
+      }
+      </button>
+      <h2>{{ selectedUser.recieverName || selectedUser.groupName || selectedUser.receiverId}}</h2>
+      <div class="group-info" *ngIf="selectedUser.chatType === 'Group'">
+        <h2>Кількість учасників: {{ userCount }}</h2>
+        <button (click)="openModal()">Відкрити список</button>
+      </div>
+      
+      }
+    </div>
+
+    <div class="chat-messages-block">
+      <div #scrollBlock class="messages-block">
+        @if(selectedUser!=null){
+          <div *ngFor="let message of messages" #message [attr.data-message-id]="message.messageId" [attr.data-sender-id]="message.senderId" 
+              [ngClass]="{'user-message': message.senderId === getId(), 'chat-partner-message': message.senderId !== getId()}" 
+              class="message">
+             <div class="main-message-container">
+                  @if (selectedUser.chatType === 'Group' && message.senderId !== getId()) {
+                    <span class = "sender-name">{{message.senderName}}</span>
+                  }
+                    <span>{{ message.text }}</span>
+             </div>
+            <div class="message-status">
+              <div class="message-time">{{ message.sendAt | date:'HH:mm' }}</div>
+              <div class="message-read-status" *ngIf = "message.senderId === getId()">
+                <span *ngIf="message.isRead">&#10004;&#10004;</span>
+                <span *ngIf="!message.isRead">&#10004;</span>
+              </div>
+            </div>
+          </div>
+        }
+
+      </div>
+    </div>
+  
+    <div class="input-message">
+      <input
+        type="text"
+        [(ngModel)]="newMessage"
+        class="message-input"
+        placeholder="Напишіть повідомлення..."
+        (keydown.enter)="sendMessage()"
+      />
+      <button class="send-btn" (click)="sendMessage()">Відправити</button>
+    </div>
+
+    <app-group-members-modal  [isOpen]="isModalOpen" 
+                              (close) = "closeModal()"
+                              [users]="userList"
+                              [groupId]="selectedUser?.recieverId">
+    </app-group-members-modal>
+
+  </div>
+  

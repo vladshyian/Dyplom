@@ -1,0 +1,44 @@
+<div class="kafedra-container">
+
+    <div class="image-container">
+
+        <img class="kafedra-img" src={{kafedra_photo}} alt="kafedra-img">
+
+    </div>
+
+    <div class="kafedra-information-container">
+
+        <button class = "redirect-to-kafedra-btn" (click)="onKafedraClick()">{{kafedra_name}}</button>
+
+        <div class="contact-container">
+
+            <span class = "contact-block">
+
+                <img class = "contact" src="person.svg" alt="contact">
+
+                <span class = "teacher-name">Завідувач - {{teacher_name}}</span>
+
+            </span>
+
+            <span class = "contact-block">
+
+                <img class = "contact" src="phone.svg" alt="contact">
+
+                <span class = "teacher-name">{{kafedra_phone}}</span>
+
+            </span>
+
+            
+            <span class = "contact-block">
+
+                <img class = "contact" src="link.svg" alt="contact">
+
+                <span class = "teacher-name"><a href="www.electronics.lnu.edu.ua" target="_blank">www.electronics.lnu.edu.ua</a></span>
+
+            </span>
+        
+        </div>
+
+    </div>
+
+</div>

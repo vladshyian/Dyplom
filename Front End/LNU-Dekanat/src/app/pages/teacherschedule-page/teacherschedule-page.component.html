@@ -1,0 +1,31 @@
+<div class="schedule-container">
+
+    <app-header></app-header>
+
+    <div class="choose-container">
+
+        <span>Розклад на {{today |  date:'shortDate'}}</span>
+
+        <div class="choose-day-container">
+
+            <span>Обретіть розклад на інший день: </span>
+
+            <select [(ngModel)]="selectedAction" (change)="performAction()">
+                <option value="action1">Понеділок</option>
+                <option value="action2">Вівторок</option>
+                <option value="action3">Середа</option>
+                <option value="action4">Четвер</option>
+                <option value="action5">П'ятниця</option>
+                <option value="action6">Субота</option>
+            </select>
+
+        </div>
+    </div>
+
+    <div class="schedule-table-container">
+
+        <app-schudle-layout [schedule]="schedule"></app-schudle-layout>
+
+    </div>
+
+</div>

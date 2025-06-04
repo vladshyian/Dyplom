@@ -1,0 +1,113 @@
+<div class="profile-container">
+
+    <div class="theme-contact-container">
+
+        <h2>Загальна інформація</h2>
+
+        @if(!isProfilePage())
+        {
+            <button (click)="openChat()" class = "contact-btn">Повідомлення</button>
+        }
+        
+    </div>
+
+    <div class="information-container">
+
+       @if(userRole || isTeacher === "admin")
+       {
+        <div class="main-info-container">
+
+            <span>Львівський національний універстиет імені Івана Франка</span>
+
+            <span>Факультет: <strong>Факультет електроніки та комп'ютерних технологій</strong></span>
+
+            <span>Кафедра: {{kafedra}}</span>
+
+            <span>Посада: {{posada}}</span>
+
+            <span>Науковий ступінь: {{stupin}}</span>
+
+            <span>Вчене звання: {{zvannya}}</span>
+
+            <span>Телефон(робочий): {{phone}}</span>
+
+            <span>Пошта: {{email}}</span>
+
+       </div>
+
+       <div class="avatar-info-container">
+
+        <div class="photo-user">
+
+            <img [src]="photo" alt="image" class="teacher-php">
+
+            <span>{{username}}</span>
+    
+        </div>
+
+        <div class="additional-info">
+
+            <app-hidden-container [buttonText]="'Наукові інтереси'"
+                        [infoText]="areasText">
+            </app-hidden-container>
+    
+            <app-hidden-container [buttonText]="'Навчальні дисципліни'"
+                          [infoText]="infoText">
+            </app-hidden-container>
+    
+            <app-hidden-container [buttonText]="'Біографія'"
+                          [infoText]="bioText">
+            </app-hidden-container>
+    
+    
+            <app-hidden-container [buttonText]="'Проекти'" 
+                                [infoText] = "projectsText">
+            </app-hidden-container>
+            
+    
+        </div>
+
+       </div>
+
+       }
+       @else if(!userRole || isTeacher === "student") {
+
+        <div class="main-info-container">
+
+            <span>Львівський національний універстиет імені Івана Франка</span>
+
+            <span>Факультет: <strong>Факультет електроніки та комп'ютерних технологій</strong></span>
+
+            <span>Кафедра: {{kafedra}}</span>
+
+            <span>Группа: {{group}}</span>
+
+            <span>Ступінь / Освітньо-професійний ступінь: {{stupin}}</span>
+
+            <span>Форма навчання: {{formOfStudy}}</span>
+
+            <span>Форма оплати навчання: {{formOfPay}}</span>
+
+            <span>Термін навчання: {{termin}}</span>
+
+            <span>Дата закінчення навчання: {{endOfStudy}}</span>
+
+            <span>Телефон: {{phone}}</span>
+
+            <span>Пошта: {{email}}</span>
+
+       </div>
+
+       <div class="additional-info">
+
+            <button routerLink="/Scorecard" class = "schedule-of-points">Журнал оцінок</button>
+
+       </div>
+
+       }
+
+       <app-chat-list [selectedUserId]="targetUserId" hidden></app-chat-list>
+
+    </div>
+
+</div>

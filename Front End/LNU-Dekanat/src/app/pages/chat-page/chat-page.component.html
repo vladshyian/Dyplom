@@ -1,0 +1,13 @@
+<div class="chat-container">
+
+    <app-header></app-header>
+
+    <div class="chat-wrapper">
+
+        <app-chat-list (userSelected)="selectUser($event)"></app-chat-list>
+        <app-chat [selectedUser]="selectedUser"
+        (triggerChatList)="updateMessage($event.senderId, $event.receiverId, $event.chatType, $event.text, $event.time)"></app-chat>
+
+    </div>
+
+</div>

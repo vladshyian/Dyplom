@@ -1,0 +1,44 @@
+@if(isOpen) {
+<div class="modal-overlay" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <h3>Користувачі</h3>
+     @if(!isAddUser) {
+        <ul class="user-list">
+            @for(user of users; track $index) {
+            @if(user.id !== getId()) {
+            <li class="user-item" style="list-style-type: none">
+              <input
+                type="checkbox"
+                [(ngModel)]="user.selected"
+              />
+              <span>{{ user.recieverName }}</span>
+            </li>
+            }
+            }
+          </ul>
+     }
+     @else if (isAddUser) {
+        @for(user of userList; track $index)
+        {
+            <li class="user-item">
+                <input
+                type="checkbox"
+                [(ngModel)]="user.selected"
+              />
+                <span>{{ user.recieverName }}</span>
+            </li>
+        }
+     }
+        @if (!isAddUser) {
+            <button (click)="deleteSelectedUsers()">Видалити вибраних</button>
+            <button (click)="addMembers()">Додати користувача</button>
+        }
+        @else if(isAddUser)
+        {
+            <button (click)="addMembersToDB()">Додати користувача/-ів</button>
+            <button (click)="addMembers()">Видалити користувача</button>
+        }
+      <button (click)="closeModal()">Закрити</button>
+    </div>
+  </div>
+}

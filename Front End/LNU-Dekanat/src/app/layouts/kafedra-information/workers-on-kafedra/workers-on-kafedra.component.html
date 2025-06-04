@@ -1,0 +1,27 @@
+<div class="workers-container">
+
+    <div class="workers-title">
+
+        <span>Співробітники</span>
+
+    </div>
+
+    <div class="workers-table">
+
+        @for (teacher of teachers; track $index) 
+        {
+
+            <div class="name-posada-container">
+
+                <a [routerLink]="['/Profile', teacher.id]">{{teacher.name}}</a>
+    
+                <span>{{teacher.title}}</span>
+    
+            </div>
+
+        }
+
+    </div>
+
+
+</div>

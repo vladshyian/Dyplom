@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Lnu_web.props" />
+</Project>

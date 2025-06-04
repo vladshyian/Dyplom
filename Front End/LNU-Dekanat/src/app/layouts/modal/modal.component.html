@@ -1,0 +1,62 @@
+@if (isVisible) {
+  <div class="modal-overlay" (click)="close()"></div>
+}
+
+
+@if (isVisible) {
+  <div class="add-schedule-container">
+    <h2>Додати розклад</h2>
+  
+    <form (ngSubmit)="saveSchedule()">
+    <label for="group">Група:</label>
+    <select name="selectedGroup" [(ngModel)] = "selectedGroup">
+      @for (group of availableGroups; track $index) 
+      {
+        <option value={{group.id}}>{{group.groupName}}</option>
+      }
+    </select>
+  
+    <label for="type">Тип пари:</label>
+    <select id="type" [(ngModel)]="selectedType" name="selectedType">
+      <option value="Лекція">Лекція</option>
+      <option value="Практика">Практика</option>
+      <option value="Лабораторна">Лабораторна</option>
+      <option value="Семінар">Семінар</option>
+    </select>
+
+    <label for="type">День:</label>
+    <select id="type" [(ngModel)]="selectedDay" name="selectedDay">
+      <option value="Понеділок">Понеділок</option>
+      <option value="Вівторок">Вівторок</option>
+      <option value="Середа">Середа</option>
+      <option value="Четвер">Четвер</option>
+      <option value="П'ятниця">П'ятниця</option>
+      <option value="Субота">Субота</option>
+    </select>
+  
+    <label for="subgroup">Підгрупа:</label>
+    <select id="subgroup" [(ngModel)]="selectedSubgroup" name="selectedSubgroup">
+      <option value="1 підгрупа">1 підгрупа</option>
+      <option value="2 підгрупа">2 підгрупа</option>
+      <option value="Потік">Потік</option>
+    </select>
+  
+    <label for="pairNumber">Номер пари:</label>
+    <input type="number" id="pairNumber" [(ngModel)]="pairNumber" name="pairNumber" min="1" max="10" />
+  
+    <label for="time">Час:</label>
+    <input type="text" id="time" [(ngModel)]="pairTime" name="pairTime" />
+  
+    <label for="name">Назва:</label>
+   <select name="pairName" id="pairName" [(ngModel)] = "pairName">
+    @for (pairName of parsedSubjectName; track $index) 
+    {
+      <option value={{pairName}}>{{pairName}}</option>
+    }
+   </select>
+  
+    <button type="submit">Зберегти</button>
+  </form>
+  </div>
+  
+}

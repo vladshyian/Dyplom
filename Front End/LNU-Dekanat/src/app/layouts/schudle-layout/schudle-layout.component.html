@@ -1,0 +1,52 @@
+<div class="schedule-container">
+
+    @if (schedule.length == 0) 
+    {
+        <div class="alert-text">
+            <span>На цей день пар немає!!!</span>
+        </div>
+
+    }@else {
+        <table border="1">
+            <thead>
+              <tr>
+                <th>Час</th>
+                <ng-container>
+                @for (pair of schedule; track $index) 
+                {
+                    <th>Пара {{ pair.pairNumber }}</th>
+                }
+                </ng-container>
+              </tr>
+            </thead>
+            <tbody>
+                @for (time of schedule; track $index) {
+                <tr>
+                    <td>{{ time.time }}</td>
+                    @for (item of schedule; track $index) {
+                    <ng-container>
+                        @if(time.time === item.time){
+                            <td 
+                            (mouseover)="item">
+                            <span [innerHTML]="item.name"></span>
+                            @if(item && userRole === "admin") {
+                            <span
+                                class="delete-hint" 
+                                (click)="deleteSchedule(item)">
+                                Видалити
+                            </span> }
+                        </td>
+                        }@else {
+                            <td></td>
+                        }
+                    </ng-container>
+                    }
+                  </tr>
+                }
+            </tbody>
+          </table>
+    }
+
+    
+
+</div>

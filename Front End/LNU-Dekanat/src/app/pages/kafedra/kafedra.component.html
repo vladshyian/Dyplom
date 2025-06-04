@@ -1,0 +1,24 @@
+<div class="kafedra-container">
+
+    <app-header></app-header>
+
+    <span class="page-title">
+        Кафедри
+    </span>
+
+    <div class="kafedras-container">
+        
+
+        @for (kafedra of departaments; track $index) 
+        {
+            <app-kafedra-layout [kafedra_name]="kafedra.departamentName"
+                                [kafedra_photo]="kafedra.kafedtaPhoto"
+                                [kafedra_phone]="kafedra.departamentPhone"
+                                [teacher_name]="kafedra.teacherName"
+                                [kafedraId]="kafedra.id"
+                                (kafedraSelected)="onKafedraSelected($event)"></app-kafedra-layout>
+        }
+
+    </div>
+
+</div>

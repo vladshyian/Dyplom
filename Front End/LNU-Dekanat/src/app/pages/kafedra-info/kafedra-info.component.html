@@ -1,0 +1,60 @@
+<div class="kafedra-info-container">
+
+    <app-header></app-header>
+
+    <div class="kafedra-info">
+
+        <div class="main-container">
+
+            <div class="page-title">
+
+                <img class = "kafedra-img" [src]="departament.kafedtaPhoto" alt="image">
+    
+                <h2>{{departament.departamentName}}</h2>
+    
+            </div>
+    
+            <div class="info-container">
+    
+                <app-kafedra-menu (selectedMenu)="onMenuSelected($event)"></app-kafedra-menu>
+
+                
+                @switch (selectedMenu) 
+                {
+                    @case ("about") 
+                    {
+                        <app-about-kafedra
+                        [teacher_name]="departament.teacherName"
+                        [kafedra_phone]="departament.departamentPhone"
+                        [about_kafedra]="departamentData.departamentAbout"></app-about-kafedra>
+                    }
+                    @case ("workers") 
+                    {
+                        <app-workers-on-kafedra
+                        [teachers]="teachers"></app-workers-on-kafedra>
+                    }
+                    @case ("schedule") 
+                    {
+                        <app-teacher-schedule
+                        [teachers]="teachers"></app-teacher-schedule>
+                    }
+                    @case ("goals") 
+                    {
+                        <app-goals
+                        [mission]="departamentData.departamentMission"
+                        [visia]="departamentData.departamentVizia"
+                        [strategic_goals]="departamentData.departamnetStrategy"></app-goals>
+                    }
+                }
+
+                <app-kafedras-menu>
+                    
+                </app-kafedras-menu>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

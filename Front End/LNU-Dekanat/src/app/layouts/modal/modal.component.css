@@ -1,0 +1,57 @@
+.modal-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1111; 
+}
+
+
+.add-schedule-container {
+  display: block;
+  position: fixed;
+  top: 1%;
+  left: 35%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  z-index: 9999;
+}
+
+.add-schedule-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+.add-schedule-container input, 
+.add-schedule-container select, 
+.add-schedule-container button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.add-schedule-container button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.add-schedule-container button:hover {
+  background-color: #0056b3;
+  z-index: 9999;
+}
+

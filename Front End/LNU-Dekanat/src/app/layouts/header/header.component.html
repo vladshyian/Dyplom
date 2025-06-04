@@ -1,0 +1,26 @@
+<header>
+
+    <div class="logo-container">
+        
+        <img class = "logo-img" src="logo.jpg" alt="logo">
+   
+    </div>
+
+    <div class="buttons-container">
+
+        <button (click)="goToProfile()" class = "profile-btn">{{username}}</button>
+        <button routerLink="/Schedule" class = "schedule-btn">Розклад</button>
+        <button routerLink="/Kafedra" class = "kafedra-btn">Кафедри</button>
+        <button routerLink="/Chats" class = "messages-btn">Повідомлення</button>
+        <button routerLink="/Settings" class="setting-btn">Налаштування</button>
+        <button *ngIf="userRole !== 'admin'" routerLink="/Navantazhennya" class="setting-btn">Навантаження</button>
+
+    </div>
+
+    <div class="logout-container">
+
+            <button (click)="logOut()" class = "logout-btn">Вихід</button>
+
+    </div>
+
+</header>

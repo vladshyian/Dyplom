@@ -1,0 +1,40 @@
+<div class = "container-wrapper">
+
+    @for (item of courses; track $index) {
+
+      <div class="button-div">
+
+        <button class="open-ifno-btn" (click)="click(item.id)">
+        <img class = "arrow-img" src="arrow-left.png" alt="arrow-left">
+            {{item.name}}</button>
+
+      </div>
+      @if (isShowed[item.id]) {
+      <div class="info-container" @fadeAnimation>
+
+        @for (item of counter(item.labs); track $index) 
+        {
+          <div class="labs">
+            <button (click)="openModal($index)">
+              <div class="labs-counter">
+                <span>Лабораторна робота {{$index + 1}}</span>
+                <span>-</span>
+                <span>0-5</span>
+              </div>
+            </button>
+          </div>
+          
+        
+        }
+
+        <div class="final-score">
+          <span>Загалом</span>
+          <span>0</span>
+        </div>
+
+      </div>
+    }
+    
+    }
+
+</div>
